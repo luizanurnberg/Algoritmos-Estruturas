@@ -66,15 +66,6 @@ public class Pile {
             return this.pile[this.top--];
         }
     }
-    
-    @Override
-    public String toString(){
-        String s = "";
-        while(emptyPile() == false){
-            for(int i = 0; i < pile.length; i++){
-                s+= pile[i] + "\n";
-            }
-        } return s;
-    }
+ 
 
 }
