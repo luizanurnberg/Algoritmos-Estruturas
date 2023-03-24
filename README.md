@@ -21,7 +21,7 @@ Em uma análise de algoritmo, deve ser considerado o tempo de execução do cód
 <h2>Listas Lineares</h2>
 Lista linear é uma estrutura de dados que conecta elementos com características/tipos semelhantes. Em uma lista linear, os dados são organizados de forma que cada elemento mantenha uma ligação com seu antecessor e seu sucessor. Em um Conjunto de N nós, onde N ≥ 0, x1, x2, ..., xn, temos as seguintes afirmações:
 
-- N = 0, dizemos que a lista ainda está vazia.
+- N = null, dizemos que a lista ainda está vazia.
 
 - Se N ≥ 0, então x1 é o primeiro nó.
 
