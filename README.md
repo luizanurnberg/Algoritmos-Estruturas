@@ -35,14 +35,15 @@ Lista linear é uma estrutura de dados que conecta elementos com característica
 <h2>Tipos de Listas Lineares</h2>
 Os tipos mais comuns de listas lineares são:
 
-<h3>pilhas</h3>
+<h3>Pilhas</h3>
 Uma pilha é uma lista linear do tipo LIFO - Last In First Out, o último elemento que entrou, é o primeiro a sair. Ela possui apenas uma entrada, chamada de topo, a partir da qual os dados entram e saem dela. 
 
+      - Códido genérico disponível na pasta 'com.mycompany.algest.pilha'
 
-<h3>filas</h3>
+<h3>Filas</h3>
 Uma fila é uma lista linear do tipo FIFO - First In First Out, o primeiro elemento a entrar será o primeiro a sair. Na fila os elementos entram por um lado (“por trás”) e saem por outro (“pela frente”). 
 
 
-<h3>deques</h3>
+<h3>Deques</h3>
 Um deque - Double-Ended QUEue) é uma lista linear na qual os elementos entram e saem tanto pela “pela frente” quanto“por trás”. Pode ser considerada uma generalização da fila.
 
