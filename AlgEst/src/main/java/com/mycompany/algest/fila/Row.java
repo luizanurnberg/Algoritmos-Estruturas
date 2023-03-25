@@ -54,7 +54,7 @@ public class Row {
                         ia dizer que a fila estava vazia e ao tentar validar o método antes de incluir um novo valor,
                         o valor pulava fora do add
      */
-    public void addValue(Object obj) {
+    public void addObject(Object obj) {
         if (start == -1) {
             start = 0;
         }
@@ -69,7 +69,7 @@ public class Row {
             - Se a fila não estiver vazia, remove do inicio da fila 
             - start++ - mostra que o incício será novo
      */
-    public Object removeValue() {
+    public Object removeObject() {
         if (emptyRow()) {
             return null;
         } else {

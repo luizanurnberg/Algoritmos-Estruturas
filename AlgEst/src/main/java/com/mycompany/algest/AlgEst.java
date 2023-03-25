@@ -6,6 +6,7 @@
 package com.mycompany.algest;
 
 import com.mycompany.algest.fila.Row;
+import com.mycompany.algest.filacircular.CircularRow;
 import com.mycompany.algest.pilha.Pile;
 
 /**
@@ -16,6 +17,7 @@ public class AlgEst {
 
     public static void main(String[] args) throws Exception {
         
+        //PILHA
 //        Pile p = new Pile();
 //        p.addObject("Luíza Nurnberg");
 //        p.addObject("Adrian Grosch");
@@ -26,16 +28,30 @@ public class AlgEst {
 //            System.out.println(p.removeObject());
 //        }
 
+        //FILA DINÂMICA
 //        Row r = new Row();
-//        r.addValue("Luíza Nurnberg");
-//        r.addValue("Adrian Grosch");
-//        r.addValue("Maria Cecília Holler");
-//        r.addValue(10);
+//        r.addObject("Luíza Nurnberg");
+//        r.addObject("Adrian Grosch");
+//        r.addObject("Maria Cecília Holler");
+//        r.addObject(10);
 //            while(r.emptyRow() == false){
-//                System.out.println(r.removeValue());
+//                System.out.println(r.removeObject());
 //            }
 //
-//        
+//    
+
+       // FILA DINÂMICA CIRCULAR
+        CircularRow cr = new CircularRow();
+        cr.addObject("Luíza Nurnberg");
+        cr.addObject("Adrian Grosch");
+        cr.addObject("Maria Cecília Holler");
+        cr.addObject(10);
+            while(cr.emptyRow() == false){
+                System.out.println(cr.removeObject());
+                
+           }
+
+   
     
     }
 }
