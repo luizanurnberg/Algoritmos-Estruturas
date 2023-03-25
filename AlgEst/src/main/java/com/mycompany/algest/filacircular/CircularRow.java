@@ -9,5 +9,5 @@ package com.mycompany.algest.filacircular;
  * @author luizanurnberg
  */
 public class CircularRow {
-    
+    int teste;
 }
