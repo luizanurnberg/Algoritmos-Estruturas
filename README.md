@@ -39,10 +39,12 @@ Os tipos mais comuns de listas lineares são:
 Uma pilha é uma lista linear do tipo LIFO - Last In First Out, o último elemento que entrou, é o primeiro a sair. Ela possui apenas uma entrada, chamada de topo, a partir da qual os dados entram e saem dela. 
 
       - Códido genérico disponível na pasta 'com.mycompany.algest.pilha'
+      - Lembrando que o QuickSort recebe uma adaptação do código da Pilha, então para cada caso ele precisa ser adaptado conforme a necessidade
 
 <h3>Filas</h3>
 Uma fila é uma lista linear do tipo FIFO - First In First Out, o primeiro elemento a entrar será o primeiro a sair. Na fila os elementos entram por um lado (“por trás”) e saem por outro (“pela frente”). 
 
+      - Códido genérico disponível na pasta 'com.mycompany.algest.fila'
 
 <h3>Deques</h3>
 Um deque - Double-Ended QUEue) é uma lista linear na qual os elementos entram e saem tanto pela “pela frente” quanto“por trás”. Pode ser considerada uma generalização da fila.
