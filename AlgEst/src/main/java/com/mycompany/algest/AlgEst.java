@@ -5,6 +5,7 @@
 
 package com.mycompany.algest;
 
+import com.mycompany.algest.fila.Row;
 import com.mycompany.algest.pilha.Pile;
 
 /**
@@ -15,16 +16,26 @@ public class AlgEst {
 
     public static void main(String[] args) throws Exception {
         
-        Pile p = new Pile();
-        p.addObject("Luíza Nurnberg");
-        p.addObject("Adrian Grosch");
-        p.addObject("Maria Cecília Holler");
-        p.addObject("André Vigarani");
-        p.addObject(10);
-                while (p.emptyPile() == false) {
-            System.out.println(p.removeObject());
-        }
-        
+//        Pile p = new Pile();
+//        p.addObject("Luíza Nurnberg");
+//        p.addObject("Adrian Grosch");
+//        p.addObject("Maria Cecília Holler");
+//        p.addObject("André Vigarani");
+//        p.addObject(10);
+//                while (p.emptyPile() == false) {
+//            System.out.println(p.removeObject());
+//        }
+
+//        Row r = new Row();
+//        r.addValue("Luíza Nurnberg");
+//        r.addValue("Adrian Grosch");
+//        r.addValue("Maria Cecília Holler");
+//        r.addValue(10);
+//            while(r.emptyRow() == false){
+//                System.out.println(r.removeValue());
+//            }
+//
+//        
     
     }
 }
