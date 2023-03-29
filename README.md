@@ -52,5 +52,7 @@ No caso da fila dinâmica, perdemos os dados quando removidos, por outro lado, n
       - Códido genérico disponível na pasta 'com.mycompany.algest.filacircular'
 
 <h3>Deques</h3>
-Um deque - Double-Ended QUEue) é uma lista linear na qual os elementos entram e saem tanto pela “pela frente” quanto“por trás”. Pode ser considerada uma generalização da fila.
+É uma estrutura de dados na qual os elementos podem ser inseridos ou excluídos de qualquer uma de suas extremidades (do início ou do fim). Utilizada uma implementação de fila duplamente ligada (ou duplamente encadeada), na qual cada elemento possui oendereço de seu antecessor e de seu sucessor.
+      
+      - Códido genérico disponível na pasta 'com.mycompany.algest.lista'
 
