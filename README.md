@@ -53,5 +53,6 @@ No caso da fila dinâmica, perdemos os dados quando removidos, por outro lado, n
 
 <h3>Deques</h3>
 É uma estrutura de dados na qual os elementos podem ser inseridos ou excluídos de qualquer uma de suas extremidades (do início ou do fim). Utilizada uma implementação de fila duplamente ligada (ou duplamente encadeada), na qual cada elemento possui oendereço de seu antecessor e de seu sucessor.
+      
       - Códido genérico disponível na pasta 'com.mycompany.algest.lista'
 
