@@ -37,21 +37,22 @@ public class AlgEst {
 //            while(r.emptyRow() == false){
 //                System.out.println(r.removeObject());
 //            }
-//
-//    
+
+    
 
        // FILA DINÂMICA CIRCULAR
-        CircularRow cr = new CircularRow();
-        cr.addObject("Luíza Nurnberg");
-        cr.addObject("Adrian Grosch");
-        cr.addObject("Maria Cecília Holler");
-        cr.addObject(10);
-            while(cr.emptyRow() == false){
-                System.out.println(cr.removeObject());
-                
-           }
-
-   
+//        CircularRow cr = new CircularRow();
+//        cr.addObject("Luíza Nurnberg");
+//        cr.addObject("Adrian Grosch");
+//        cr.addObject("Maria Cecília Holler");
+//        cr.addObject(10);
+//            //gera loop
+//            while(cr.emptyRow() == false){
+//                System.out.println(cr.removeObject());
+//                
+//           }
+//
+//   
     
-    }
+   }
 }

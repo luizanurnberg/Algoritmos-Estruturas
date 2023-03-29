@@ -44,6 +44,19 @@ public class Row {
     }
 
     /*
+            Método que valida se a fila está cheia ou não
+            - se sim, retorna true
+            - se não, retorna false
+           
+     */
+    public boolean fullRow() {
+        if (numberOfElements == size) {
+            return true;
+        }
+        return false;
+    }
+
+    /*
             Método para adicionar valores no array
             - Se a fila não estiver vazia, inclui os valores no fim da fila
             - Lembrando que o começo é inicializado em -1 no construtor, ou seja ao executar a linha 53 e depois a 55
@@ -55,11 +68,13 @@ public class Row {
                         o valor pulava fora do add
      */
     public void addObject(Object obj) {
+        if(fullRow()){
+            System.out.println("A fila está cheia!");
+        }
         if (start == -1) {
             start = 0;
         }
-        end++;
-        row[end] = obj;
+        row[end++] = obj;
         numberOfElements++;
 
     }

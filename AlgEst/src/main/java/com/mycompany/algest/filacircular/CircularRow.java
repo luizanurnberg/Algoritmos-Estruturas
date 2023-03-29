@@ -10,25 +10,41 @@ package com.mycompany.algest.filacircular;
  */
 public class CircularRow {
 
-    public Knot start;
-    public Knot end;
+    public int start;
+    public int end;
+    public int size;
+    public int numberOfElements;
+    public Object row[];
 
     /*
             Construtor da fila
-            - inicio e fim serão iniciados como null.
+            - Inicializando começo e fim como vazios
+            - Tamanho igual 100 
+            - Número de elementos igual a 0
      */
     public CircularRow() {
-        this.start = null;
-        this.end = null;
+        this.start = -1;
+        this.end = -1;
+        this.size = 100;
+        this.row = new Object[size];
+        this.numberOfElements = 0;
     }
 
     /*
             Método que valida se a fila está vazia ou não
             - se sim, retorna true
             - se não, retorna false
+            * OBS: o método de add poderia ser após o if de validação
      */
     public boolean emptyRow() {
-        if (start == null && end == null) {
+        if (numberOfElements == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean fullRow() {
+        if (numberOfElements == size) {
             return true;
         }
         return false;
@@ -36,49 +52,40 @@ public class CircularRow {
 
     /*
             Método para adicionar valores no array
-            - Se a fila estiver vazia, ele apenas coloca o fim e o inicio apontados na mesma posição, 
-                caso contrário, tem que inserir o novo na ultima posição e alterar o indicador
+            - Se a fila não estiver vazia, inclui os valores no fim da fila
+            - Lembrando que o começo é inicializado em -1 no construtor, ou seja ao executar a linha 53 e depois a 55
+              quer dizer que o começo e fim são iguais na primeira iteração de objeto
+                START = 0 e END = 0 (END ++, ou seja -1 + a iteração do primeiro objeto)
+                *OBS: não usei o método 'emptyRow()' porque nos testes de bug era gerado um problema.
+                      - o número de elementos na primeira iteração sempre ia ser 0, ou seja, ao fazer a validação,
+                        ia dizer que a fila estava vazia e ao tentar validar o método antes de incluir um novo valor,
+                        o valor pulava fora do add
      */
     public void addObject(Object obj) {
-        Knot newKnot = new Knot(obj);
-
-        //Começo e fim recebem o mesmo objeto, apontador do fim recebe o começo
-        if (start == null) {
-            start = newKnot;
-            end = newKnot;
-            end.nextKnot = start;
+        if (fullRow()) {
+            System.out.println("A fila está cheia!");
         } else {
-            //o novo início receberá o inicío anterior
-            newKnot.nextKnot = start;
-            //o fim recebe o novo elemento, já que numa fila os elementos entram sempre por trás
-            end.nextKnot = newKnot;
-            end = newKnot;
+            if (start == -1) {
+                start = 0;
+            }
         }
+        end++;
+        row[end] = obj;
+        numberOfElements++;
 
     }
 
     /*
             Método para remover valores no array
+            - Se a fila não estiver vazia, remove do inicio da fila 
+            - start++ - mostra que o incício será novo
      */
     public Object removeObject() {
-
-        Object removed;
-
-        if (emptyRow() || start == end) {
+        if (emptyRow()) {
             return null;
         } else {
-            //o objeto a ser removido será o dado do primeiro objeto iterado no construtor da classe Knot
-            removed = start.data;
-            //fim vai receber o início, ou seja, uma posição vazia
-            end = start;
-            //início receberá o novo início
-            start = start.nextKnot;
-            end.nextKnot = start;
-
+            numberOfElements--;
+            return this.row[start++];
         }
-
-        return removed;
-
     }
-
 }
