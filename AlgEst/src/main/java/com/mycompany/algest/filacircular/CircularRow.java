@@ -34,7 +34,7 @@ public class CircularRow {
             Método que valida se a fila está vazia ou não
             - se sim, retorna true
             - se não, retorna false
-            * OBS: o método de add poderia ser após o if de validação
+            
      */
     public boolean emptyRow() {
         if (numberOfElements == 0) {
@@ -43,6 +43,12 @@ public class CircularRow {
         return false;
     }
 
+    /*
+            Método que valida se a fila está cheia ou não
+            - se sim, retorna true
+            - se não, retorna false
+           
+     */
     public boolean fullRow() {
         if (numberOfElements == size) {
             return true;

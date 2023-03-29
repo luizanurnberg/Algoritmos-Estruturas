@@ -7,6 +7,7 @@ package com.mycompany.algest;
 
 import com.mycompany.algest.fila.Row;
 import com.mycompany.algest.filacircular.CircularRow;
+import com.mycompany.algest.lista.List;
 import com.mycompany.algest.pilha.Pile;
 
 /**
@@ -52,7 +53,11 @@ public class AlgEst {
 //                
 //           }
 //
-//   
-    
+//     
+       //LISTA ENCADEADA
+       List l = new List();
+       System.out.println(l.euclides(1754, 37));
+       
+       
    }
 }
