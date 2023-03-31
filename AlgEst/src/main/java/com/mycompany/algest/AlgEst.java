@@ -56,7 +56,8 @@ public class AlgEst {
 //     
        //LISTA ENCADEADA
        List l = new List();
-       System.out.println(l.euclides(1754, 37));
+       l.show(l.euclides(125,75));
+      
        
        
    }

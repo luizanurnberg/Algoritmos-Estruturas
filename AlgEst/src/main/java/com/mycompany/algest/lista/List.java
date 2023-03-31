@@ -10,8 +10,8 @@ package com.mycompany.algest.lista;
  */
 public class List {
 
-    private int divisor;
-    private int dividend;
+    private int divisor = 0;
+    private int dividend = 0;
 
     /* Construtor para o algoritmo da divisao euclidiana */
     public List() {
@@ -19,7 +19,7 @@ public class List {
         this.dividend = dividend;
     }
 
-    public Knot euclides(int divisor, int dividend) {
+    public Knot euclides(int dividend, int divisor) {
         Knot head = new Knot();
         head.dividend = dividend;
         head.divisor = divisor;
@@ -32,7 +32,7 @@ public class List {
             Knot newKn = new Knot();
             newKn.dividend = aux.divisor;
             newKn.divisor = remnant;
-            newKn.nextKnot = aux;
+            newKn.previousKnot = aux;
             aux.nextKnot = newKn;
             aux = newKn;
 
@@ -43,17 +43,16 @@ public class List {
         return head;
     }
 
-    // Imprime a sequ�ncia de divis�es gerada pelo algor�tmo
+    // Imprime a sequencia gerada pelo algoritmo
     public void show(Knot head) {
-        Knot aux = head;
         String msg = "";
 
-        while (aux.nextKnot != null) {
-            msg += "[" + aux.dividend + "," + aux.divisor + "] ";
-            aux = aux.nextKnot;
+        while (head.nextKnot != null) {
+            msg += "[" + head.dividend + "," + head.divisor + "] ";
+            head = head.nextKnot;
         }
-        msg += "[" + aux.dividend + "," + aux.divisor + "] ";
-        System.out.println("MDC: " + aux.divisor);
+        msg += "[" + head.dividend + "," + head.divisor + "] ";
+        System.out.println("MDC: " + head.divisor);
         System.out.println(msg);
 
     }
