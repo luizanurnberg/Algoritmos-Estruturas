@@ -14,4 +14,5 @@ public class Knot {
     public int divisor = 0;
     public Knot nextKnot = null;
     public Knot previousKnot = null;
+    public List de = null;
 }

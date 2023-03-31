@@ -14,7 +14,7 @@ public class List {
     private int dividend = 0;
 
     /* Construtor para o algoritmo da divisao euclidiana */
-    public List() {
+    public List(int dividend, int divisor) {
         this.divisor = divisor;
         this.dividend = dividend;
     }

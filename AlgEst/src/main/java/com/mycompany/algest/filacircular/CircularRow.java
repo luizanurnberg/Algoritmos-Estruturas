@@ -89,9 +89,11 @@ public class CircularRow {
     public Object removeObject() {
         if (emptyRow()) {
             return null;
-        } else {
-            numberOfElements--;
-            return this.row[start++];
+        } else if (start == end) {
+            start = 0;
+            end = 0;
         }
+        numberOfElements--;
+        return this.row[start++];
     }
 }
