@@ -56,3 +56,5 @@ No caso da fila dinâmica, perdemos os dados quando removidos, por outro lado, n
       
       - Códido genérico disponível na pasta 'com.mycompany.algest.lista'
 
+<h3>Tabelas Hash</h3>
+Em tabelas hash, os dados são armazenados em formas de pares de chaves e valores. Exceto em algumas raras exceções, colisões vão existir (diferentes chaves com o mesmo hash). A forma como lidamos com elas é encadeando objetos em uma lista ou procurando outras posições livres na tabela.
